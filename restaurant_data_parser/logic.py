@@ -1,9 +1,7 @@
 import json
 from urllib.request import urlopen
-from urllib.error import URLError
 
 def fetch_restaurants(api: str) -> list[dict]:
-    lst = []
     try:
         with urlopen(api) as connection:
             response = connection.read().decode('utf-8')
