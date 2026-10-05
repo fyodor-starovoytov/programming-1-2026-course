@@ -9,6 +9,7 @@ def run_program() -> None:
 
         while True:
             restaurant = input("Restaurant (enter for list): ")
+            print (logic.get_restaurant(restaurants_available, restaurant))
             if restaurant == "":
                 logic.print_restaurant_names(api)
             elif logic.get_restaurant(restaurants_available, restaurant):
