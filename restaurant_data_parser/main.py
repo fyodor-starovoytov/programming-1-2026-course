@@ -1,117 +1,27 @@
-import json
-from urllib.request import urlopen
-from urllib.error import URLError
+import logic
+def run_program() -> None:
+    while True:
+        api = input("URL (enter for default): ")
+        if api == "":
+            api = "https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"
 
-def fetch_restaurants(api: str) -> list[dict]:
-    lst = []
-    try:
-        with urlopen(api) as connection:
-            response = connection.read().decode('utf-8')
-        data = json.loads(response)
-        return data["results"]["en"]
+        restaurants_available = logic.fetch_restaurants(api)
 
-    except Exception:
-        raise OSError("Failed to load data from the API");
+        while True:
+            restaurant = input("Restaurant (enter for list): ")
+            if restaurant == "":
+                logic.print_restaurant_names(api)
+            elif logic.get_restaurant(restaurants_available, restaurant):
+                print("Restaurant found")
+                break
+            else:
+                print("Restaurant not found")
 
-def get_restaurant(restaurants: list[dict], restaurant_name: str) -> dict:
-    try:
-        for restaurant in restaurants:
-            if restaurant["name"].lower().startswith(restaurant_name.lower()):
-                return restaurant
-    except Exception:
-        raise ValueError("Failed to find restaurant starting with: " + restaurant_name)
+        diet = input("diet (enter for none): ")
+        if diet == "":
+            diet = None
 
-def get_hours(restaurant_data: dict) -> str:
-    try:
-        data =  restaurant_data["opening_hours"]
-        if data == "":
-            return "Unknown hours"
-        return data
-    except Exception:
-        return "Unknown hours"
+        print("")
+        logic.print_lunches(api, restaurant ,diet)
 
-def fits_diet(lunch_option: list[dict], diet: str) -> bool:
-    count = 0
-    max_count = len(lunch_option)
-    for item in lunch_option:
-        for element in item["diets"]:
-            if element.lower() == diet.lower():
-                count += 1
-    if count == max_count:
-        return True
-    return False
-
-def get_lunch_options(restaurant_data: dict, diet: str | None = None) -> list[list[dict]]:
-    lst = []
-    data = restaurant_data["items"]
-    if diet is None:
-        return data
-    else:
-        for item in data:
-            if fits_diet(item, diet):
-                lst.append(item)
-    return lst
-
-def get_price(lunch_option: list[dict]) -> str:
-    try:
-        data = lunch_option[0]["price"]
-        if data != "":
-            return data
-        else:
-            return "Unknown price"
-    except Exception:
-        return "Unknown price"
-
-def print_restaurant_names(api: str) -> None:
-    data = fetch_restaurants(api)
-    lst = []
-    for element in data:
-        if element != "":
-            lst.append(element["name"])
-    names = ""
-    for item in lst:
-        names += f"{item}, "
-    return names
-
-def describe_lunch_option(lunch_option: list[dict]) -> str:
-    str = ""
-    for i in range(len(lunch_option)):
-        option = lunch_option[i]["name"]
-        str += f"\t{option.strip()}\n"
-    price = lunch_option[0]["price"]
-    str += f"\t{price.strip()}\n"
-    return str
-
-def print_lunches(api: str, restaurant_name: str, diet: str | None = None) -> None:
-    restaurants = fetch_restaurants(api)
-    restaurant = get_restaurant(restaurants, restaurant_name)
-
-    time = get_hours(restaurant)
-    lunches = get_lunch_options(restaurant, diet)
-    if len(lunches) == 0:
-        print("No suitable lunches")
-        return
-
-    print(f"{restaurant['name']} ({time})")
-    str = ""
-
-    for j in lunches:
-        for i in range(len(j)):
-            option = j[i]["name"]
-            str += f"\t{option.strip()}\n"
-        price = j[0]["price"]
-        str += f"\t{price.strip()}\n"
-
-    print(str)
-
-
-
-print (fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"))
-print (get_restaurant(fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"), "pi"))
-print (get_hours(get_restaurant(fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"), "il")))
-print (fits_diet(get_restaurant(fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"), "pi")["items"][0], "VeG"))
-print (get_lunch_options(get_restaurant(fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"), "pi"), "m"))
-print (get_price(get_restaurant(fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"), "pi")["items"][0]))
-print (print_restaurant_names("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"))
-print (describe_lunch_option(get_restaurant(fetch_restaurants("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"), "pi")["items"][0]))
-print_lunches("https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json", "pi", "Veg")
+run_program()
