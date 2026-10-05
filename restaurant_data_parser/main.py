@@ -3,7 +3,9 @@ def run_program() -> None:
     while True:
         api = input("URL (enter for default): ")
         if api == "":
-            api = "https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"
+            api = "https://jybar.app.jyu.fi/api/2/lunches"
+            #Task-oriented local api:
+            #api = "https://tim.jyu.fi/files/kurssit/it/iseai/26-27/programming1/material/files/1015427/lunches.json"
 
         restaurants_available = logic.fetch_restaurants(api)
 
