@@ -1,7 +1,7 @@
-import ToDoTask
+import to_do_task
 
 def run_program():
-    task_list = ToDoTask.TaskList()
+    task_list = to_do_task.TaskList()
     print("Commands: (q)uit; (d)isplay; (n)ext; (a)dd; (c)omplete; (u)ndo; (t)otals; (s)ave; (l)oad\n")
 
     while True:
