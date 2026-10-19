@@ -17,7 +17,7 @@ class TaskList:
         to_return = to_return + " " + ", ".join(items)
 
         if  len(items) >= 4:
-            to_return += " ..."
+            to_return += ", ..."
 
         return to_return
 
@@ -52,7 +52,7 @@ class TaskList:
         else:
             task = None
             for pending_task in self._pending:
-                if pending_task[1] == name:
+                if pending_task[1].lower() == name.lower():
                     task = pending_task
                     break
 
@@ -88,7 +88,7 @@ class TaskList:
         try:
             return self._pending[0]
         except:
-            raise ValueError("No tasks pending")
+            raise ValueError("No pending tasks")
 
     def remaining(self) -> int:
         #Returns remaining tasks in pending list
