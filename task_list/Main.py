@@ -2,7 +2,7 @@ import ToDoTask
 
 def run_program():
     task_list = ToDoTask.TaskList()
-    print("Commands: (q)uit; (d)isplay; (n)ext; (a)dd; (c)omplete; (u)ndo; (t)otals")
+    print("Commands: (q)uit; (d)isplay; (n)ext; (a)dd; (c)omplete; (u)ndo; (t)otals; (s)ave; (l)oad\n")
 
     while True:
         user_input = input()
@@ -10,7 +10,7 @@ def run_program():
             break
 
         if user_input == "":
-            print("Commands: (q)uit; (d)isplay; (n)ext; (a)dd; (c)omplete; (u)ndo; (t)otals")
+            print("Commands: (q)uit; (d)isplay; (n)ext; (a)dd <priority> <name>; (c)omplete (<name>); (u)ndo; (t)otals; (s)ave; (l)oad\n")
             continue
 
         if user_input == "d":
@@ -70,6 +70,33 @@ def run_program():
                 print(f"Error: {e}")
             continue
 
-        if user_input == "t":
-            print(f"{task_list.remaining()} pending; {task_list.completed()} completed")
+        if command == "s":
+            if len(parts) < 2:
+                task_list.save("tasks.txt")
+                print(f"Saved to {"tasks.txt"}")
+            else:
+                task_list.save(parts[1])
+                print(f"Saved to {parts[1]}")
             continue
+
+        if command == "l":
+            try :
+                if len(parts) < 2:
+                    task_list.load("tasks.txt")
+                    print(f"Loaded from {"tasks.txt"}")
+                else:
+                    task_list.load(parts[1])
+                    print(f"Loaded from {parts[1]}")
+
+            except ValueError as e:
+                print(f"Error: {e}")
+            continue
+
+        if user_input == "t":
+            try:
+                print(f"{task_list.remaining()} pending; {task_list.completed()} completed")
+            except:
+                print(f"Error: File not found")
+            continue
+
+run_program()

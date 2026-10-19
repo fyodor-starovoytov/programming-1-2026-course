@@ -97,3 +97,52 @@ class TaskList:
     def completed(self) -> int:
         #Returns completed tasks in completed list
         return len(self._completed)
+
+    def save(self, path):
+        try :
+            with open(path, "w") as f:
+                lst = []
+                for pending_task in self._pending:
+                    lst.append(f"{pending_task[0]};{pending_task[1]}")
+                pending = "|".join(lst)
+
+                lst = []
+                for completed_task in self._completed:
+                    lst.append(f"{completed_task[0]};{completed_task[1]}")
+                completed = "|".join(lst)
+
+                f.write(pending + "\n" + completed + "\n")
+        except:
+            raise ValueError()
+
+    def load(self, path):
+        lines = []
+        try:
+            with open(path, "r") as f:
+                for line in f:
+                    lines.append(line.strip())
+
+            if len(lines) > 3:
+                raise ValueError("File malformed")
+
+            pen_list = lines[0].split("|")
+            _pending = []
+            for pending_task in pen_list:
+                if not pending_task:
+                    break
+                pending_task = pending_task.strip().split(";")
+                _pending.append((int(pending_task[0]), pending_task[1]))
+
+            com = lines[1].strip()
+            com_list = com.split("|")
+            _completed = []
+            for completed_task in com_list:
+                if not completed_task:
+                    break
+                completed_task = completed_task.strip().split(";")
+                _completed.append((int(completed_task[0]), completed_task[1]))
+
+            self._pending = _pending
+            self._completed = _completed
+        except:
+            raise ValueError()
