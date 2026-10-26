@@ -1,0 +1,27 @@
+Entry 1
+
+Tool / model: Claude
+What I asked (your prompt): 
+
+Generate me 2 text txt files. One must contain very sensitve topics, searches and words you would one private. The other should have stll sensitve data. just less so then the first. Make the files as extensive as possible.
+
+What I got back (summary): The 2 files that can be seen in the repo as keywords_sensitive.txt and keywords_very_sensitive.txt
+What I did with it: used as-is
+How I checked it was right: I read through the file to make sure it contained only sensitive info.
+
+
+
+Entry 2
+
+Tool / model: ChatGPT
+What I asked (your prompt):
+
+give me a giant list of the most common  google searches, give it to me copyable , no headers and numberings
+
+What I got back (summary): a list of 1024 lines of most popular searches, which can be found in injection.txt
+What I did with it: used as is
+How I checked it was right: As in entry 1
+
+
+
+

@@ -1,0 +1,9 @@
+.venv/
+
+.idea/
+
+**/injection.txt
+__pycache__/
+*.pyc
+venv/
+.venv/
