@@ -1,5 +1,5 @@
 # Search Poisoning, CORPOISON
-Small project made for our concluding Hackathon event on Programming Course 1. Worked in Teams of 3. Mine responsibilities were user interaction and combining every single logic file in Main file. Maintainer of the project.
+Small project made for our concluding Hackathon event on Programming 1 Course. Worked in Teams of 3. Mine responsibilities were user interaction and combining every single logic file in Main file. Maintainer of the project.
 
 
 ## What it does?
