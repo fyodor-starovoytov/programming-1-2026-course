@@ -1,0 +1,665 @@
+accident
+acne
+activism
+activist
+add
+address
+adhd
+adoption
+age
+agnostic
+agreement
+alcohol
+allergies
+allergy
+ammunition
+anabolic
+anemia
+anesthesia
+anonymity
+anonymous
+antibiotics
+anxiety
+anxious
+apartment
+argument
+army
+arthritis
+ashamed
+assisted living
+asthma
+atheism
+atheist
+attorney
+audit
+autism
+baby
+baby names
+back pain
+background check
+bad credit
+bank
+bank account
+bank statement
+baptism
+bariatric
+beer
+benefits
+betting
+bible
+birth control
+birth date
+birthday
+bitcoin
+black lives matter
+blacklist
+blocklist
+blood pressure
+blood sugar
+bmi
+boarding pass
+body image
+bonus
+botox
+boyfriend
+breakup
+breast implants
+breastfeeding
+broke up
+brother
+browsing history
+buddhist
+bullied
+bullying
+bumble
+burnout
+caffeine
+calorie
+calories
+camera
+campaign donation
+cannabis
+car
+car accident
+car loan
+caregiver
+casino
+catfish
+cbd
+cctv
+celiac
+character reference
+charity
+chat history
+cheat
+cheating
+cheating exam
+child
+child protection
+child services
+children
+cholesterol
+christian
+chronic illness
+chronic pain
+church
+cigarette
+cigarettes
+citizenship
+claim
+clinic
+colitis
+communist
+commute
+condom
+confession
+confidential
+conflict
+conscription
+conservative
+constipation
+contraception
+contraceptive pill
+contract
+conversion
+convert to
+cookies
+cosmetic surgery
+counseling
+counselling
+counselor
+couples therapy
+court
+cover letter
+covid
+covid test
+credit
+credit check
+credit report
+credit score
+crohn
+crush
+crypto
+cryptocurrency
+cult
+current location
+custody
+cv
+cyberbullying
+data breach
+data privacy
+data protection
+date of birth
+dating
+dating app
+death
+debt
+debts
+deepfake
+demonstration
+dental problems
+dentist
+deployment
+depressed
+depression
+dermatologist
+diabetes
+diarrhea
+diet
+diet plan
+digestive problems
+direct message
+disability
+disability pension
+disabled
+discrimination
+discrimination at work
+disease
+dizziness
+dm
+doctor
+doctors appointment
+donate
+donation
+dosage
+drinking
+driving license
+drunk
+dying
+dyslexia
+eczema
+edibles
+elderly care
+election
+email address
+embarrassing
+embarrassing question
+emergency room
+employer
+employment contract
+energy drinks
+engagement
+estate
+estranged
+estranged from family
+ethnic
+ethnic origin
+ethnicity
+ex boyfriend
+ex girlfriend
+ex husband
+ex wife
+ex-muslim
+expelled
+eye surgery
+facebook
+failed exam
+faith
+fake profile
+family
+family conflict
+family problems
+family secret
+far left
+far right
+fasting
+father
+fatigue
+fever
+fiance
+fiancee
+fight
+fine
+firearm
+fired
+first name
+flight
+flight booking
+flu
+food bank
+foreign
+foster care
+full name
+gambling
+gaming addiction
+gastric bypass
+gdpr
+girlfriend
+glasses prescription
+gossip
+gps
+gps location
+grades
+grandparents
+green card
+grief
+grieving
+guardian
+guilt
+gun
+gun license
+gynecologist
+hacked
+hacker
+hacking
+hair loss
+hair transplant
+hangover
+harassment at work
+hash
+headache
+health
+health condition
+health insurance
+hearing aid
+hearing loss
+heart attack
+heart disease
+hindu
+holiday
+home address
+home address history
+home care
+home loan
+home location
+hospital
+hotel booking
+house price
+housing
+how much do i earn
+hr complaint
+hunting
+husband
+hypertension
+ibs
+ibuprofen
+identity theft
+illness
+immigrant
+immigration
+incognito
+income
+infection
+inheritance
+insomnia
+instagram
+insulin
+insurance
+insurance claim
+intelligence agency
+interest rate
+intimacy
+investment
+investments
+itinerary
+iud
+jealous
+jehovah
+jewish
+job application
+job interview
+job loss
+job offer
+judge
+kidney
+kids
+knife
+koran
+labor union
+laid off
+landlord
+language barrier
+last name
+late payment
+lawsuit
+lawyer
+layoff
+leaked
+learning disability
+lease
+leaving religion
+legal
+legal advice
+liberal
+libido
+license plate
+lie
+life insurance
+liposuction
+liver
+loan
+location
+loneliness
+lonely
+long covid
+lose weight
+losing virginity
+loss of a loved one
+lottery
+love
+lying
+maiden name
+marijuana
+marital problems
+marriage
+marriage counseling
+medical condition
+medical leave
+medical marijuana
+medication
+medicine
+meditation
+menopause
+menstruation
+mental health
+mental health day
+microphone
+migraine
+migrant
+military
+military service
+mindfulness
+minor
+minority
+monitoring
+mormon
+mortgage
+mosque
+mother
+mother's maiden name
+moving
+moving to
+muslim
+my address
+my age
+my daughter
+my email
+my kids
+my location
+my name
+my phone number
+my salary
+my son
+my vote
+nationalist
+nationality
+naturalization
+nausea
+neighbor dispute
+neighbors
+neighbours
+net worth
+newborn
+nicotine
+no fly list
+non-compete
+nursing home
+obesity
+obstetrician
+ocd
+online casino
+operation
+orphan
+osteoporosis
+overdue
+overweight
+owe money
+painkillers
+panic
+paracetamol
+parents
+parking fine
+partner
+party membership
+passport
+passport renewal
+paternity
+pay cut
+pay raise
+penalty
+pension
+period pain
+personal data
+personal information
+petition
+phishing
+phobia
+phone number
+physician
+pii
+pills
+plagiarism
+plastic surgery
+poker
+police
+police record
+police report
+political
+political party
+political views
+politics
+populist
+pray
+prayer
+pre workout
+pregnancy symptoms
+prenatal
+privacy
+private information
+private message
+property
+protest
+proxy
+psoriasis
+puberty
+quit my job
+quit smoking
+quran
+race
+racial
+racism
+racist
+real estate
+recovery from surgery
+reference check
+referral
+refinance
+refugee
+registration number
+regret
+rejection letter
+relationship
+relationship problems
+relationships
+religion
+religious
+relocate
+rent
+rental
+reservation
+residence permit
+resignation
+resume
+retirement
+retirement home
+revenge
+rumor
+safe sex
+salary
+savings
+scam
+scammed
+scandal
+scholarship
+school
+school counselor
+school records
+scientology
+screen time
+search history
+secret
+secrets
+sect
+security clearance
+sensitive data
+settlement
+severance
+sex
+sex education
+sex life
+sexual
+sexuality
+shame
+sibling
+sick
+sick leave
+side effects
+signal
+sikh
+sister
+skin color
+skin condition
+sleep apnea
+sleep disorder
+slot machines
+smoking
+snapchat
+snus
+social benefits
+social media
+social services
+social worker
+socialist
+soldier
+special needs
+specialist
+speeding ticket
+sports betting
+spy
+spyware
+stalkerware
+steroids
+stocks
+stolen identity
+stress
+strike
+stroke
+student
+student loan
+subpoena
+sue
+supplements
+surgery
+surname
+surveillance
+suspended
+symptom
+symptoms
+synagogue
+tax
+tax refund
+tax return
+taxes owed
+teen
+teenager
+telegram
+temple
+tenant
+terminated
+testify
+testosterone
+thc
+therapist
+therapy
+thesis
+thyroid
+tiktok
+tinder
+tobacco
+tor
+torah
+tracked
+tracking
+tracking cookies
+trade union
+trading account
+traffic violation
+travel
+travel insurance
+travel plans
+trial
+trip
+trust issues
+tuition
+twitter
+ultrasound
+underage
+unemployed
+unemployment
+union
+university
+university application
+unpaid
+urologist
+username
+vacation
+vaccination
+vaccine
+vaccine side effects
+vape
+vaping
+vehicle
+veteran
+violence
+violent
+virgin
+virus
+visa
+visa application
+vodka
+vote
+voting
+vpn
+war
+watchlist
+weapon
+webcam
+wedding
+weed
+weight gain
+weight loss
+welfare
+whatsapp
+wheelchair
+where i live
+whereabouts
+whiskey
+wife
+will and testament
+wine
+witness
+work location
+work permit
+workplace
+workplace address
+workplace bullying
